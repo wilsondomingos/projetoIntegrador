@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body{
+  
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+}
+
+header{
+  height: 16vh;
+  margin-bottom: 10vw;
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vh;
+}
+
+.enter{
+  display: flex;
+  justify-content: space-around;
+  width: 19vw;
+}
+
+.enter ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+li a{
+  margin: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 50px 0px 0 160px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 48vw;
+}
+div h1{
+  font-weight: normal;
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+.menu-cabecalho{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 50px 170px 50px 110px;
+}
+
+footer{
+  height: 30vh;
+  background-color: #F6EFEF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2{
+  font-size: 23px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px #cccc;
+  font-family: 'Roboto';
+}
+
+h3{
+  font-size: 10px;
+  font-weight: normal
+}
+
+div h2{
+  font-size: 23px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px #cccc;
+  font-family: 'Roboto';
+}
+
+div h3{
+  font-size: 10px;
+  font-weight: normal
+}
+
+li:nth-child(8)>a{
+  color: red;
+}
+
+.endereco{
+  margin: 1vw 5vh;
+}
+.endereco span{
+  font-size: 30px;
+  margin: 3vh 0 2vh 0;
+  
+}
+
+.autor{
+  display: flex;
+  margin: 1vh 1.5vw ;
+  
+}
+
+.autor input[type="text"],
+select{
+  border: none;
+  border-bottom: 1px solid #cccc ;
+  width: 36vw;
+  margin: 0.8vw;
+  
+}
+.escolhafone{
+  display: flex;
+  margin: 2vh 0 2vh 2vw;
+}
+
+.escolhafone input[type="radio"]
+{
+  margin: 0 2vw 0 0;
+  
+}
+
+.radios input{
+  list-style: square;
+  border: 1px solid red;
+}
+.escolhafone label{
+  margin: 0 2vw 0 0;
+}
+.nomeObra input[type="text"]{
+  border: none;
+  border-bottom: 1px solid #cccc ;
+  width: 75vw;
+  margin: 2vw;
+}
+
+.nomeObra label {
+  margin: 0vh 0vw 0vh 2vw ;
+  font-size: 10px;
+}
+
+.autor label {
+  margin: 0.8vw ;
+  font-size: 10px;
+}
+
+.confimacao{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw 0 2vw;
+}
+.temaentrega{
+  margin: 2vh 2vw;
+}
+.entrega input{
+  margin: 2vh 0 2vh 0;
+}
+.imagems{
+  font-size: 9px;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #999;
+  font-size: 9px;
+  border: none;
+  cursor: pointer;
+  width: 8vw;
+}
+
+button:hover{
+  background-color: rgb(5, 117, 5);
+  box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
+}
+main{
+  height: 120vh;
+  width: 80vw;
+  border: 1px solid #cccc;
+  background-color: white;
+  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
+ }
+
+ 
