@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body{
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+.icons {
+  padding: 1px;
+  margin: 1px;
+  height: 40px;
+  width:  40px;
+  
+  }
+
+  .icon {
+    padding: 1px;
+    margin: 1px;
+    height: 10px;
+    width:  10px;
+}
+
+header{
+  height: 25vh;
+}
+.logo{
+
+  justify-content: space-around;
+  margin-top: 2vh;
+  margin-left: 1vh;
+}
+
+.enter{
+  display: flex;
+  width: 19vw;
+  text-size-adjust: 10px;
+}
+
+.enter li{
+  display: inline;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 20px;
+}
+
+.enter ul li a{
+  font-size: 1rem;
+}
+
+.tipo_arts ul li a{
+  font-size: 1rem;
+}
+
+.ft_red {
+  color: red;
+}
+a{
+	margin: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #000000;
+  }
+  
+nav {
+	border-bottom:1px solid #CCC;
+	background-color: #FFFFFF;
+}
+
+nav>ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between; 
+}
+
+nav>ul>li>a{
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
+	color: #333;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+/* identical to box height */
+	text-transform: uppercase;
+}
+.Cliente {
+	position: absolute;
+	width: 82px;
+	height: 82px;
+	left: 76px;
+	top: 350px;
+    background: url(user.png);
+}
+.lado-lado>main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	align-items: baseline;
+	row-gap: 50px;
+}
+.container-fluid	{
+	border: 1px solid powderblue;
+	padding: 20;
+	margin: 40;
+}
+footer{
+	margin: 0;
+	padding: 0;
+	background:  #FFFFFF;
+	display: flex;
+	justify-content: space-between; 
+}
+
+
+
+

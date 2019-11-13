@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body{
+  
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+}
+
+header{
+  height: 16vh;
+  
+}
+li a{
+  margin: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+}
+ul{
+  list-style: none;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+}
+.enter{
+  display: flex;
+  justify-content: space-around;
+  width: 19vw;
+}
+
+.icone{
+  display: flex;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.navegacao_footer>ul>li>a{
+  font-size: 9px;
+}
+
+.conteudo{
+   display: grid;
+   grid-template-columns: 50vw auto;
+   grid-template-rows: auto auto ;
+}
+div h1{
+  font-weight: normal;
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+main{
+  height: 120vh;
+  background-image: url(../img/arte-773x1030.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 1px;
+}
+aside{
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.menu-cabecalho{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 25px 170px 25px 110px;
+}
+
+.text1 {
+  font-size: 1rem;
+}
+
+footer{
+  height: 30vh;
+  background-color: #F6EFEF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div h2{
+  font-size: 23px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px #cccc;
+  font-family: 'Roboto';
+}
+
+div h3{
+  font-size: 10px;
+  font-weight: normal
+}
+
+li:nth-child(8)>a{
+  color: red;
+}
+
+/* aside h2{
+  display: flex;
+  justify-content: center;
+  margin-top:24vh ;
+  margin-bottom:10vh ;
+} */
+
+/* p{
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+} */
+
+.bloco{
+  margin-bottom:5vh
+}
+
+/* abaixo foi incluido pelo Joao */
+
+#carousel img{
+  height: 100vh;
+  object-fit: cover;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 0.5rem 4rem;
+  margin-bottom: 1rem;
+}
+
+.button2 {
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  
+  padding: 1rem 1.2rem;
+  background-color: rgb(211, 188, 58);
+}
+
+.button3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+
+
+}.button4 {
+  background-color: white; /* Green */
+  border: none;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.button5{
+  padding: 1rem 11rem;
+  background-color: black;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+.button6{
+
+  background-image: url(./src/assets/img/icons/magnifying-glass.png);
+  background-color: red;
+}
+
+
