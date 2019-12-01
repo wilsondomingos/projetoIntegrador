@@ -6,93 +6,92 @@
   box-sizing: border-box;
   outline: 0;
 }
+html,
 body{
-  
   font-family: 'Roboto', sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
+.navbar{
+  background-color: #6495ED;
+}
+.icons {
+  padding: 1px;
+  margin: 1px;
+  height: 30px;
+  width:  30px;
+  border: none;
+  }
 
 header{
-  height: 16vh;
-  
-}
-li a{
-  margin: 5px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #000000;
-}
-ul{
-  list-style: none;
+  height: 24vh;
 }
 
-.logo{
+.log{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2vh;
 }
+
 .enter{
   display: flex;
-  justify-content: space-around;
   width: 19vw;
+  text-size-adjust: 10px;
+  margin-top: 2vh;
 }
-
-.icone{
-  display: flex;
-}
-
-nav ul{
-  display: flex;
+.enter li{
+  display: inline;
   justify-content: space-around;
   list-style: none;
-}
-.navegacao_footer>ul>li>a{
-  font-size: 9px;
+  font-size: 20px;
 }
 
-.conteudo{
-   display: grid;
-   grid-template-columns: 50vw auto;
-   grid-template-rows: auto auto ;
-}
-div h1{
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 36px;
+li a{
+  margin: 0vh;
+  padding: 3vh 2vw;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+  line-height: normal;
 }
 
-main{
-  height: 132vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-left: 0px;
-  border: 1px solid #ccc;
+li a:hover{
+  text-decoration: none;
+  color: #ccc;
 }
-aside{
-  border: none;
-  border-top: 1px solid #ccc;
-
+.lista li a{
+  font-size: 10px;
+  margin: 0px;
+  text-decoration: none;
 }
-
-.menu-cabecalho{
-  display: flex;
-  justify-content: space-around;
+.lista li{
   list-style: none;
-  margin: 50px 170px 50px 110px;
+  margin: 1px;
+}
+
+.card-body{
+  border:1px solid rgb(193, 218, 255);
+  border-radius: 2%;
+  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
+
+}
+.card-img-top{
+  height: 48vh;
+}
+
+.card-title{
+  font-size: 0px;
+}
+.btn-primary{
+  background-color: #6495ED;
 }
 
 footer{
   height: 30vh;
-  background-color: #F6EFEF;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.carro{
-  height: 80vh;
-
+  overflow: hidden;
+  width: 100vw;
 }
 
 div h2{
@@ -107,27 +106,77 @@ div h3{
   font-weight: normal
 }
 
-li:nth-child(8)>a{
-  color: red;
-}
-.destaque{
-  display: flex;
-  justify-content: center;
-}
-aside h2{
+/* aside h2{
   display: flex;
   justify-content: center;
   margin-top:24vh ;
   margin-bottom:10vh ;
-}
+} */
 
-p{
+/* p{
   text-align: center;
   font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
-}
+} */
 
 .bloco{
   margin-bottom:5vh
 }
+
+/* abaixo foi incluido pelo Joao */
+
+#carousel img{
+  height: 100vh;
+  object-fit: cover;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 0.5rem 4rem;
+  margin-bottom: 1rem;
+}
+
+.button2 {
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  
+  padding: 1rem 1.2rem;
+  background-color: rgb(211, 188, 58);
+}
+
+.button3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+
+
+}.button4 {
+  background-color: white; /* Green */
+  border: none;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.card-img-onca{
+  height: 68vh;
+}
+
+.button5{
+  padding: 1rem 11rem;
+  background-color: black;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+.button6{
+
+  background-image: url(./src/assets/img/icons/magnifying-glass.png);
+  background-color: red;
+}
+
+

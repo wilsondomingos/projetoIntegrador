@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/compras.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,50 +29,88 @@
   <!-- Menu superior -->
 
   <!-- ========================================== cabeçario ===================================== -->
-  <header class="container">
-
-    <div class="container ">
-      <!-- ========================================== area do logo a esquerda no cabecalho ===================================== -->
-      <div class="container logo ">
-
-        <div class="container ">
-          <h1>Sociedade an{ }nima</h1>
-        </div>
-
-        <div class="container enter mr-5">
-          <div class="row">
-            <ul class="row mr-3">
-              <li> <a href="RegistroDeCliente.html">Regitre-se</a></li>
-              <li>|</li>
-              <li><a href="">Entre</a></li>
-            </ul>
-          </div>
-          <!-- ========================================== area do icon a direita no cabecalho ===================================== -->
-          <div class="row icone">
-            <a href=""><img src="./img/search-24px.svg" alt="procurar"></a>
-            <a href=""><img src="./img/like_favorite_heart_5759.png" width="23px" alt="coracao"></a>
-            <a href=""><img src="./img/local_mall-24px.svg" alt="bolca"></a>
-          </div>
-        </div>
+  <header>
+    <div class=" container log  ">
+      <div class="logo col-lg-3 ">
+        <a href="index.html"><img src="img/logo_preto.png" width="210px" alt=""></a>
       </div>
 
-      <!-- ========================================== fim do  cabecalho ===================================== -->
+      <div class="enter d-flex flex-row-reverse col-lg-8">
+        <ul>
+          <div class="btn-group">
+              <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Olá, Wilson
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <li> <a href="">Perfil do usuário</a></li>
+                <li> <a href="VendaDeProduto.html">Vender</a></li>
+              </div>
+            </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light mr-5">
+          <li><button type="button" class="btn  " data-toggle="modal" data-target="#procura"><img class="icons"
+                src="img/search-24px.svg" width="10px" alt="procurar"></button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+            <div class="modal fade" id="procura" tabindex="-1" role="dialog" aria-labelledby="procuraLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div>
+                    <button type="button m-5" class="close pr-2" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
 
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                    <form>
+                      <div class="form-group pt-4 px-3">
+                        <div class="d-flex">
+                          <input type="text" class="form-control" id="pesquisa" aria-describedby="pesquisaHelp"
+                            placeholder="pesquisa">
+                          <button type="submit" class="btn btn-outline-light px-2 pt-0" data-toggle="modal"
+                            data-target="#procura"><img class="icons" src="img/search-24px.svg" alt="procurar"></button>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          <li><a class="icons" href=""><img class="icons" src="img/like_favorite_heart_5759.png" alt="coracao"></a>
+          </li>
+          <li><a class="icons" href="compras.html"><img class="icons" src="img/icons/shopping.svg" alt="bolca"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light menu-bar ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="  collapse navbar-collapse ml-5" id="navbarNavDropdown">
+        <ul class=" navbar-nav ml-5">
+
+          <li class=" nav-item dropdown mr-4">
+          <a class="nav-dark " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <a href="index.html"> <img src="./img/home-24px.svg" alt=""> </a>
+            </a>
+          </li>
+          <li class="nav-item dropdown mr-4">
+              <a class="nav-dark " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Pinturas
               </a>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu btn-light mt-3">
                 <a class="dropdown-item" href="pinturas21.html">TODOS</a>
                 <a class="dropdown-item" href="#">FINE ART</a>
                 <a class="dropdown-item" href="#">MODERNA</a>
@@ -80,330 +120,325 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Fotografias
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">TODOS</a>
-                <a class="dropdown-item" href="#">FINE ART</a>
-                <a class="dropdown-item" href="#">MODERNA</a>
-                <a class="dropdown-item" href="#">ABSTRATA</a>
-                <a class="dropdown-item" href="#">CONCEITUAL</a>
-                <a class="dropdown-item" href="#">RETRATO</a>
-              </div>
-            </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Fotografias
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+              <a class="dropdown-item" href="fonto.html">TODOS</a>
+              <a class="dropdown-item" href="#">FINE ART</a>
+              <a class="dropdown-item" href="#">MODERNA</a>
+              <a class="dropdown-item" href="#">ABSTRATA</a>
+              <a class="dropdown-item" href="#">CONCEITUAL</a>
+              <a class="dropdown-item" href="#">RETRATO</a>
+            </div>
+          </li>
 
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Desenho
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">TODOS</a>
-                <a class="dropdown-item" href="#">FINE ART</a>
-                <a class="dropdown-item" href="#">MODERNA</a>
-                <a class="dropdown-item" href="#">ABSTRATA</a>
-                <a class="dropdown-item" href="#">GRAFITTI</a>
-                <a class="dropdown-item" href="#">ILUSTRACAO DIGITAL</a>
-              </div>
-            </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Desenho
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+              <a class="dropdown-item" href="desenho.html">TODOS</a>
+              <a class="dropdown-item" href="#">FINE ART</a>
+              <a class="dropdown-item" href="#">MODERNA</a>
+              <a class="dropdown-item" href="#">ABSTRATA</a>
+              <a class="dropdown-item" href="#">GRAFITTI</a>
+              <a class="dropdown-item" href="#">ILUSTRACAO DIGITAL</a>
+            </div>
+          </li>
 
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Prints
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">TODOS</a>
-                <a class="dropdown-item" href="#">COLAGEM</a>
-                <a class="dropdown-item" href="#">MODERNA</a>
-                <a class="dropdown-item" href="#">ABSTRATA</a>
-                <a class="dropdown-item" href="#">GRAFITTI</a>
-                <a class="dropdown-item" href="#">ILUSTRACAO DIGITAL</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                HQ
-              </a>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-dark " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Prints
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+              <a class="dropdown-item" href="prints.html">TODOS</a>
+              <a class="dropdown-item" href="#">COLAGEM</a>
+              <a class="dropdown-item" href="#">MODERNA</a>
+              <a class="dropdown-item" href="#">ABSTRATA</a>
+              <a class="dropdown-item" href="#">GRAFITTI</a>
+              <a class="dropdown-item" href="#">ILUSTRACAO DIGITAL</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-dark " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              HQ
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+              <a class="dropdown-item" href="HQ.html">TODOS</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Esculturas
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+              <a class="dropdown-item" href="escultura.html">TODOS</a>
+              <a class="dropdown-item" href="#">FINE ART</a>
+              <a class="dropdown-item" href="#">MODERNA</a>
+              <a class="dropdown-item" href="#">ABSTRATA</a>
+              <a class="dropdown-item" href="#">MINIMALISTA</a>
+              <a class="dropdown-item" href="#">FIGURATIVA</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-1">
+            <a class="nav-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Outros
+            </a>
+            <div class="dropdown-menu btn-light mt-3">
+                <a class="dropdown-item" href="arquitetura.html">ARQUITETURA</a>
+            </div>
 
-            </li>
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Esculturas
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">TODOS</a>
-                <a class="dropdown-item" href="#">FINE ART</a>
-                <a class="dropdown-item" href="#">MODERNA</a>
-                <a class="dropdown-item" href="#">ABSTRATA</a>
-                <a class="dropdown-item" href="#">MINIMALISTA</a>
-                <a class="dropdown-item" href="#">FIGURATIVA</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown mr-5">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Outros
-              </a>
-
-            </li>
-            <li class="nav-item dropdown mr-5 ">
-              <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdownMenuLink" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Leilão
-              </a>
-
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+          </li>
+          <li class="nav-item dropdown mr-4 ">
+            <a class="nav-link  text-danger" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Leilão
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
-
-
-  <!-- fim da parte inicial --- Cabecalho  -->
-
-
-  <div class="container navbar navbar-light bg-light py-1">
+  <div class="container navbar navbar-light bg-light mt-4">
     <h2>
       Destaques | Artes de semana selecionadas pela nossa curadoria
     </h2>
   </div>
 
-  <!-- inicio do quadro lado a lado -->
+  <div class="container-fluid">
+    <div class="container my-5 p-1">
+      <div class="row">
+        <div class="col-md-1 p-1">
+          <a class="icons" href=""><img class="mb-2 p-0 m-0" src="img/arts/onça.jpg" width="40px" height="40px"
+              alt="coracao"></a>
+          <a class="icons" href=""><img class="icons p-0 m-0" src="img/search-24px.svg" alt="bolca"></a>
+        </div>
+        <div class="col-md-7">
+          <img src="img/arts/onça.jpg" class="card-img-onca" alt="...">
+        </div>
+        <div class="col-md-4 ">
+          <div class="jumbotron jumbotron-fluid py-5 bg-light">
+            <div class="container bg-light">
+              <h5>Nome da Arte</h5>
+              <h5>Autor</h5>
+              <h6>Cidade - Estado</h6>
+              <h6></h6>
+              <h6>Tipo de arte</h6>
+              <h6>xx cm - xx cm</h6>
 
-  <div class="container my-5 p-1">
+              <a class="button1" href="" role="button">Adicionar aos favoritos</a>
+              <div class="mt-4">
+                <a class="button2" href="carrinho.html" role="button">R$ xxx,xx ADICIONAR AO CARRINHO</a>
+              </div>
+              <div class="mt-4 ml-1">
+                <a class="icons" href="carrinho.html">Calcule o frete</a>
+              </div>
 
-    <div class="row">
+              <div class="mt-3 ml-1">
+                <nav>
 
-      <div class="col-md-1 p-1">
+                  <a class="button3" href="" role="button">302 visitas</a>
+                  <a class="button3" href="" role="button">7 favoritos</a>
 
-        <a class="icons" href=""><img class="mb-2 p-0 m-0" src="./assets/img/arts/onça.jpg" width="40px" height="40px"
-            alt="coracao"></a>
-        <a class="icons" href=""><img class="icons p-0 m-0" src="./img/search-24px.svg" alt="bolca"></a>
-      </div>
+                </nav>
 
-      <div class="col-md-7">
+              </div>
 
-        <img src="./assets/img/arts/onça.jpg" class="card-img-top" alt="...">
+              <div class="mt-4 ml-2">
+                <a class="button1" href="Infor_artista.html" role="button">Perfil do Artista</a>
+              </div>
 
-      </div>
-
-      <div class="col-md-4">
-
-        <div class="jumbotron jumbotron-fluid py-5">
-          <div class="container">
-            <h5>Nome da Arte</h5>
-            <h5>Autor</h5>
-            <h6>Cidade - Estado</h6>
-            <h6></h6>
-            <h6>Tipo de arte</h6>
-            <h6>xx cm - xx cm</h6>
-
-            <a class="button1" href="" role="button">Adicionar aos favoritos</a>
-            <div class="mt-4">
-              <a class="button2" href="carrinho.html" role="button">R$ xxx,xx ADICIONAR AO CARRINHO</a>
-            </div>
-            <div class="mt-4 ml-1">
-              <a class="icons" href="carrinho.html">Calcule o frete</a>
-            </div>
-
-            <div class="mt-3 ml-1">
-              <nav>
-
-                <a class="button3" href="" role="button">302 visitas</a>
-                <a class="button3" href="" role="button">7 favoritos</a>
-
-              </nav>
 
             </div>
-
-            <div class="mt-4 ml-2">
-              <a class="button1" href="Infor_artista.html" role="button">Perfil do Artista</a>
-            </div>
-
-
           </div>
+
+
         </div>
 
 
-      </div>
 
+        <!-- fim do quadro lado a lado -->
 
+        <!-- Mostra as artes -->
 
-      <!-- fim do quadro lado a lado -->
+        <div class="container my-3">
 
-      <!-- Mostra as artes -->
-
-      <div class="container my-3">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/willen_basse_1634.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Neptune and the pillares of Hercules</h5>
-                <p class="card-text">de Willen Basse</p>
-                <p class="card-text">POSTER 40cm x 20cm</p>
-                <p class="card-text">R$ 150,00 </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/A13574.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nome da obra</h5>
-                <p class="card-text">Autor</p>
-                <p class="card-text">Tipo xx cm x xx cm</p>
-                <p class="card-text">R$ xxx,xx </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/A24845.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nome da obra</h5>
-                <p class="card-text">Autor</p>
-                <p class="card-text">Tipo xx cm x xx cm</p>
-                <p class="card-text">R$ xxx,xx </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Neptune and the pillares of Hercules</h5>
+                  <p class="card-text">de Willen Basse</p>
+                  <p class="card-text">POSTER 40cm x 20cm</p>
+                  <p class="card-text">R$ 150,00 </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/A24845.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nome da obra</h5>
-                <p class="card-text">Autor</p>
-                <p class="card-text">Tipo xx cm x xx cm</p>
-                <p class="card-text">R$ xxx,xx </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/1200px-Chardin_pastel_selfportrait.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Nome da obra</h5>
+                  <p class="card-text">Autor</p>
+                  <p class="card-text">Tipo xx cm x xx cm</p>
+                  <p class="card-text">R$ xxx,xx </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Nome da obra</h5>
+                  <p class="card-text">Autor</p>
+                  <p class="card-text">Tipo xx cm x xx cm</p>
+                  <p class="card-text">R$ xxx,xx </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Nome da obra</h5>
+                  <p class="card-text">Autor</p>
+                  <p class="card-text">Tipo xx cm x xx cm</p>
+                  <p class="card-text">R$ xxx,xx </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Neptune and the pillares of Hercules</h5>
+                  <p class="card-text">de Willen Basse</p>
+                  <p class="card-text">POSTER 40cm x 20cm</p>
+                  <p class="card-text">R$ 150,00 </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                  <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Nome da obra</h5>
+                  <p class="card-text">Autor</p>
+                  <p class="card-text">Tipo xx cm x xx cm</p>
+                  <p class="card-text">R$ xxx,xx </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/8ac8a55494.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Neptune and the pillares of Hercules</h5>
+                  <p class="card-text">de Willen Basse</p>
+                  <p class="card-text">POSTER 40cm x 20cm</p>
+                  <p class="card-text">R$ 150,00 </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-sm-3">
+              <div class="card h-100">
+                <img src="img/carrossel/arte-773x1030.jpg" class="card-img-top" alt="...">
+                <div class="card-body  m-3">
+                  <h5 class="card-title">Neptune and the pillares of Hercules</h5>
+                  <p class="card-text">de Willen Basse</p>
+                  <p class="card-text">POSTER 40cm x 20cm</p>
+                  <p class="card-text">R$ 150,00 </p>
+                  <div class="d-flex flex-row-reverse">
+                    <a class="icons" href="compras.html"><img class="icons" src="img/icons/mais bolça.svg"
+                        width="23px" alt="coracao"></a></li>
+                    <a class="icons" href=""><img class="icons" src="img/local_mall-24px.svg" alt="bolca"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/willen_basse_1634.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Neptune and the pillares of Hercules</h5>
-                <p class="card-text">de Willen Basse</p>
-                <p class="card-text">POSTER 40cm x 20cm</p>
-                <p class="card-text">R$ 150,00 </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/A13574.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nome da obra</h5>
-                <p class="card-text">Autor</p>
-                <p class="card-text">Tipo xx cm x xx cm</p>
-                <p class="card-text">R$ xxx,xx </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-sm-3">
-            <div class="card h-100">
-              <img src="./assets/img/arts/paul_gauguin_1892.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Neptune and the pillares of Hercules</h5>
-                <p class="card-text">de Willen Basse</p>
-                <p class="card-text">POSTER 40cm x 20cm</p>
-                <p class="card-text">R$ 150,00 </p>
-                <div class="d-flex flex-row-reverse">
-                  <a class="icons" href=""><img class="icons" src="./assets/img/icons/shopping-bag (1).png"
-                      width="23px" alt="coracao"></a></li>
-                  <a class="icons" href=""><img class="icons" src="./img/like_favorite_heart_5759.png" alt="bolca"></a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Comprar</a> -->
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
-        <!-- ========================================== inicio do footer ===================================== -->
-        <div class="col-lg-12 mt-5">
-          <nav class="col-lg-6 navegacao_footer">
-            <ul>
-              <li><a href="">ENTER</a></li>
-              <li><a href="VendaDeProduto2.html">PARA ARTISTAS</a></li>
-              <li><a href="sobre.html">SOBRE</a></li>
-            </ul>
-          </nav>
-          <div>
-            <nav class="navegacao_footer">
-              <ul class="col-lg-12">
-                <li><a href="termos_de_servico.html">TERMOS DE SERVIÇO</a></li>
-                <li><a href="RegistroDeCliente.html">CADASTRE-SE</a></li>
-                <li><a href="politica_de_privacidade.html">POLITICAS DE PRIVACIDADE</a></li>
-                <li><a href="VendaDeProduto.html">PARA COMPRADORES</a></li>
-                <li><a href="">NEWSLETTER</a></li>
-                <li><a href="">FALE CONOSCO</a></li>
-              </ul>
-            </nav>
+  </div> <!-- ========================================== inicio do footer ===================================== -->
+  <nav class=" container navbar navbar-expand-lg navbar-light  ">
+    <ul class="row  lista">
+      <li><a href="VendaDeProduto2.html">PARA ARTISTAS</a></li>
+      <li><a href="sobre.html">SOBRE</a></li>
+      <li><a href="termos_de_servico.html">TERMOS DE SERVIÇO</a></li>
+      <li><a href="politica_de_privacidade.html">POLITICAS DE PRIVACIDADE</a></li>
+      <li><a href="VendaDeProduto.html">PARA COMPRADORES</a></li>
+      <li><a href="">NEWSLETTER</a></li>
+      <li><a href="">FALE CONOSCO</a></li>
+      <li><a class="text-Dark link"  href="">CADASTRAR</a></li>
+      <li><a href="">ENTER</a></li>
+    </ul>
+  </nav>
 
-            <!-- ========================================== fim do menu navegaçao do footer ===================================== -->
 
-            <!-- ========================================== inicio do footer ===================================== -->
-            <footer class="row">
-              <div>
-                <h2>Sociedade an{}nima</h2>
-              </div>
-              <div>
-                <h3>@2019 LOGO|DIGITAL HOUSE|ALL RIGHTS RESERVD</h3>
-              </div>
-              <div>
-                <a href=""><img src="./img/FB_icon-icons.com_65484.png" alt="facebook"></a>
-                <a href=""><img src="./img/instagram_icon-icons.com_49943.png" alt="instagram"></a>
-                <a href=""><img src="./img/icons8-pinterest-50.png" width="29px" alt="pintrest"></a>
-                <a href=""><img src="./img/twitter-3_icon-icons.com_50735.png" alt="twitter"></a>
-              </div>
-            </footer>
-
-            <!-- ========================================== fim do footer ===================================== -->
+  <footer class="row ">
+    <div>
+      <h2>Sociedade an{}nima</h2>
+    </div>
+    <div>
+      <h3>@2019 LOGO|DIGITAL HOUSE|ALL RIGHTS RESERVD</h3>
+    </div>
+    <div>
+      <a href=""><img src="./img/FB_icon-icons.com_65484.png" alt="facebook"></a>
+      <a href=""><img src="./img/instagram_icon-icons.com_49943.png" alt="instagram"></a>
+      <a href=""><img src="./img/icons8-pinterest-50.png" width="29px" alt="pintrest"></a>
+      <a href=""><img src="./img/twitter-3_icon-icons.com_50735.png" alt="twitter"></a>
+    </div>
+  </footer>
+  </div>
+  <!-- ========================================== fim do footer ===================================== -->
 
 
 </body>

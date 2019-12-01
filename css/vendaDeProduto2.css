@@ -6,48 +6,64 @@
   box-sizing: border-box;
   outline: 0;
 }
+html,
 body{
-  
   font-family: 'Roboto', sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
+.navbar{
+  background-color: #6495ED;
+}
+.icons {
+  padding: 1px;
+  margin: 1px;
+  height: 30px;
+  width:  30px;
+  border: none;
+  }
 
 header{
-  height: 16vh;
-  
+  height: 24vh;
 }
-li a{
-  margin: 5px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #000000;
-}
-ul{
-  list-style: none;
-}
-
-.logo{
+.log{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2vh;
 }
+
 .enter{
   display: flex;
-  justify-content: space-around;
   width: 19vw;
+  text-size-adjust: 10px;
+  margin-top: 2vh;
 }
-
-.icone{
-  display: flex;
-}
-
-nav ul{
-  display: flex;
+.enter li{
+  display: inline;
   justify-content: space-around;
   list-style: none;
+  font-size: 20px;
 }
-.navegacao_footer>ul>li>a{
-  font-size: 9px;
+
+li a{
+  margin: 0vh;
+  padding: 3vh 2vw;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+  line-height: normal;
+}
+li a:hover{
+  text-decoration: none;
+  color: #ccc;
+}
+.lista li a{
+  font-size: 10px;
+  margin: 0px;
+  text-decoration: none;
+}
+.lista li{
+  list-style: none;
+  margin: -1px;
 }
 
 .conteudo{
@@ -127,4 +143,25 @@ p{
 
 .bloco{
   margin-bottom:5vh
+}
+.button4 {
+  background-color: white; /* Green */
+  border: none;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2vw;
+}
+
+
+.button5{
+  padding: 1rem 11rem;
+  background-color: black;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  
 }

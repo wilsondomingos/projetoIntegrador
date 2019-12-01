@@ -6,62 +6,106 @@
   box-sizing: border-box;
   outline: 0;
 }
+html,
 body{
-  
   font-family: 'Roboto', sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
+.navbar{
+  background-color: #6495ED;
+}
+.icons {
+  padding: 1px;
+  margin: 1px;
+  height: 30px;
+  width:  30px;
+  border: none;
+  }
 
 header{
-  height: 20vh;
-  border: 1px solid #ccc;
+  height: 24vh;
 }
-.logo{
+
+.log{
   display: flex;
-  justify-content: space-between;
-  margin: 2vh 10vw ;
+  justify-content: space-evenly;
 }
 
 .enter{
   display: flex;
-  justify-content: space-around;
   width: 19vw;
+  text-size-adjust: 10px;
+  margin-top: 2vh;
 }
-
-.enter ul{
-  display: flex;
+.enter li{
+  display: inline;
   justify-content: space-around;
   list-style: none;
+  font-size: 20px;
 }
 
-a{
-  margin: 5px;
+li a{
+  margin: 0vh;
+  padding: 3vh 2vw;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #000000;
+  line-height: normal;
+}
+li a:hover{
+  text-decoration: none;
+  color: #ccc;
+}
+.lista li a{
+  font-size: 10px;
+  margin: 0px;
+  text-decoration: none;
+}
+.lista li{
+  list-style: none;
+  margin: -1px;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F2EEEE;
-  width: 100vw;
-  height: 48vw;
+
+
+
+.button4 {
+  background-color: white; /* Green */
+  border: none;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2vw;
 }
-h1{
-  font-weight: normal;
-  font-family: 'Roboto';
+
+
+.button5{
+  padding: 1rem 11rem;
+  background-color: black;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  
 }
+
+/*=======================Media telefones=======================*/
+
+
+
 
 main{
- height: 66vh;
+ height: 60vh;
  width: 80vw;
  border: 1px solid #cccc;
  background-color: white;
  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
  display: grid;
- grid-template-columns: 30vw auto;
+ grid-template-columns: 55vw auto;
+ grid-template-rows: auto auto ;
 }
 .nav-bar{
  width: 100vw;
@@ -73,19 +117,14 @@ main{
   margin: 4vh 3vw 4vh  10vw;
   list-style: none;
 }
-a{
-  font-size: 12px;
-}
 
 
 section> div:nth-child(1){
-  height: 63vh;
+  height: 94vh;
   display: flex;
-  margin-left: 2vw;
-  margin-top: 2vh;
-  align-items: flex-start; 
+  justify-content: center;
+  align-items: center; 
   flex-direction: column;
- 
 }
 
 div>img{
@@ -94,36 +133,40 @@ div>img{
   border: 1px solid #cccc;
 }
 
-
-#tema{
-  margin-bottom:10px;
-  font-weight: bold;
-}
-article>div{
-  
-  margin-top:4vw ;
-}
-
-article div:nth-child(1 ){
- 
-  margin-left:4vw;
-}
-article div:nth-child(2){
- 
-  margin-left:4vw;
-}
-
-article>div:nth-child(3){
-  display: flex;
-  justify-content: flex-end;
-  margin: 16vh 8vh ;
-}
-article>div> div>li{
-  list-style: none;
+div>span{
+  margin: 0px 0 0 0;
  
 }
 
+form input[type="text"]{
+  border: none;
+  border-bottom: 1px solid rgb(119, 118, 118);
+}
+button{
+  padding: 10px 50px;
+  background-color: #6495ED;
+  font-size: 9px;
+  border: none;
+ 
+}
+div button{
+  margin: 0vh 0vw;
+}
+button:hover{
+  background-color: rgb(255, 254, 254);
+  box-shadow: 3px 3px 3px rgba(14, 12, 12, 0.5);
+}
 
+
+
+section> div:nth-child(2){
+  margin: 60px;
+}
+
+
+ .control:hover{
+   background-color: rgb(172, 172, 70);
+ }
 
 
 

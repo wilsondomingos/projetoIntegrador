@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+html,
+body{
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.navbar{
+  background-color: #6495ED;
+}
+.icons {
+  padding: 1px;
+  margin: 1px;
+  height: 30px;
+  width:  30px;
+  border: none;
+  }
+
+header{
+  height: 20.4vh;
+}
+ aside{
+   margin-top: 0;
+   background-image: url('../img/arts/foto-de-capa.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+   height: 62vh;
+   margin-bottom: 0.4vh;
+
+ }
+
+ .menu-perfil{
+  height: 10vh;
+  background-color: rgb(223, 223, 179);
+ }
+
+ .menu-perfil ul{
+   display: flex;
+   justify-content: center;
+   
+   height: 10vh;
+ }
+ .menu-perfil ul li{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cccc;
+  margin-left: 0.1vw;
+  
+ }
+ .foto-perfil{
+   height: 20vh;
+   width: 10vw;
+   border-radius:100% ;
+   background-image: url('../img/icons/user.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  
+ }
+ .conteudo-perfil{
+   display: flex;
+   
+   margin-top: 4vh;
+   position: relative;
+ }
+ .nome-perfil{
+   position: relative;
+   top: 8vh;
+   left: 4vw;
+ }
+ main{
+   height: 80vh;
+ }
+.log{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.enter{
+  display: flex;
+  width: 19vw;
+  text-size-adjust: 10px;
+  margin-top: 2vh;
+}
+.enter li{
+  display: inline;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 20px;
+}
+li a{
+  margin: 0vh;
+  padding: 3vh 2vw;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+  line-height: normal;
+}
+li a:hover{
+  text-decoration: none;
+  color: #ccc;
+}
+.lista li a{
+  font-size: 10px;
+  margin: 0px;
+  text-decoration: none;
+}
+.lista li{
+  list-style: none;
+  margin: -1px;
+}
+
+
+
+
+
+footer{
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+
+div h1{
+  font-size: 24px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px #cccc;
+  font-family: 'Roboto';
+}
+div h2{
+  font-size: 23px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px #cccc;
+  font-family: 'Roboto';
+}
+
+div h3{
+  font-size: 10px;
+  font-weight: normal
+}
+
+.button4 {
+  background-color: white; /* Green */
+  border: none;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 2vw;
+}
+
+.card-body{
+  border:1px solid rgb(193, 218, 255);
+  border-radius: 2%;
+  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
+
+}
+.card-img-top{
+  height: 40vh;
+}
+.card-text{
+  font-size: 10px;
+}
+.button5{
+  padding: 1rem 11rem;
+  background-color: black;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+/*=======================Media telefones=======================*/
+
