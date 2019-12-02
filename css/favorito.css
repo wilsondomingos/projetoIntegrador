@@ -79,15 +79,14 @@ header{
  main{
    height: 80vh;
  }
-.log{
+ .log{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .enter{
   display: flex;
   width: 19vw;
-  text-size-adjust: 10px;
   margin-top: 2vh;
 }
 .enter li{
@@ -183,5 +182,9 @@ div h3{
   
 }
 
+button:hover{
+  
+  box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
+}
 /*=======================Media telefones=======================*/
 

@@ -28,13 +28,12 @@ header{
 }
 .log{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .enter{
   display: flex;
   width: 19vw;
-  text-size-adjust: 10px;
   margin-top: 2vh;
 }
 .enter li{
@@ -110,9 +109,7 @@ h3{
   font-weight: normal
 }
 
-li:nth-child(8)>a{
-  color: red;
-}
+
 
 .endereco{
   margin: 1vw 5vh;
@@ -186,7 +183,7 @@ button{
 }
 
 button:hover{
-  background-color: rgb(5, 117, 5);
+ 
   box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
 }
 main{

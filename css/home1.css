@@ -16,8 +16,12 @@ body{
   background-color: #6495ED;
 }
 .capa{
-  z-index: 1;
-  background-color: blue;
+  z-index: 1px;
+  background-color: rgb(50, 50, 150);
+}
+.destaque{
+  z-index: 2px;
+  color: white;
 }
 .slides{
   z-index: 2;
@@ -37,13 +41,12 @@ body{
   }
   .log{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   
   .enter{
     display: flex;
     width: 19vw;
-    text-size-adjust: 10px;
     margin-top: 2vh;
   }
 
@@ -148,6 +151,10 @@ div h3{
   color: white;
   font-size: 1rem;
   
+}
+button:hover{
+  
+  box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
 }
 
 /*=======================Media telefones=======================*/
