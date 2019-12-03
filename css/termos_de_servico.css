@@ -119,7 +119,7 @@ main{
   margin: 50px 170px 50px 110px;
 }
 footer{
-  height: 30vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: center;

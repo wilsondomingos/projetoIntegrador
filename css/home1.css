@@ -101,9 +101,11 @@ div>img{
 .card-text{
   font-size: 10px;
 }
-
+.hederfooter{
+ 
+}
 footer{
-  height: 26vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -156,6 +158,7 @@ button:hover{
   
   box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
 }
+
 
 /*=======================Media telefones=======================*/
 

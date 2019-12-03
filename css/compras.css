@@ -85,7 +85,7 @@ li a:hover{
 }
 
 footer{
-  height: 30vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
