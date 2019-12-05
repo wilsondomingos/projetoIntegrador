@@ -64,11 +64,10 @@ li a:hover{
 }
 
 .card-body{
-  border:1px solid #ccc;
+  border:1px solid rgb(193, 218, 255);
   border-radius: 2%;
-  height: 35vh;
-  width: 16vw;
- 
+  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
+
 }
 
 .card{
@@ -76,13 +75,11 @@ li a:hover{
   margin: 3px;
 }
 .card-img-top{
-  height: 35vh;
-  width: 16vw;
-  margin: 2px;
+  height: 40vh;
 }
 
-.card-title{
-  font-size: 0px;
+.card-text{
+  font-size: 10px;
 }
 footer .card{
   box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
