@@ -63,26 +63,27 @@ li a:hover{
   margin: -1px;
 }
 
-.card-body{
-  border:1px solid #ccc;
-  border-radius: 2%;
-  height: 35vh;
-  width: 16vw;
- 
-}
 
 .card{
   border: none;
   margin: 3px;
 }
-.card-img-top{
+.card-body{
+  border:1px solid rgb(193, 218, 255);
+  border-radius: 2%;
+  box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
   height: 35vh;
+  width: 16vw;
+}
+
+.card-img-top{
+  height: 40vh;
   width: 16vw;
   margin: 2px;
 }
 
 .card-title{
-  font-size: 0px;
+  font-size: 10px;
 }
 footer .card{
   box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);

@@ -159,12 +159,17 @@ div h3{
   border:1px solid rgb(193, 218, 255);
   border-radius: 2%;
   box-shadow: -10px 13px 18px -16px rgba(0,0,0,0.75);
-
+  height: 35vh;
+  width: 16vw;
 }
+
 .card-img-top{
   height: 40vh;
+  width: 16vw;
+  margin: 2px;
 }
-.card-text{
+
+.card-title{
   font-size: 10px;
 }
 .button5{
