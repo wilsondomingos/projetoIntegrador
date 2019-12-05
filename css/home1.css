@@ -37,9 +37,7 @@ body{
   border: none;
   }
 
-  header{
-    height: 22vh;
-  }
+ 
   .log{
     display: flex;
     justify-content: space-around;
@@ -91,11 +89,10 @@ li a:hover{
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 0px;
-  opacity: 0.7;
 }
 .nome{
   color: #003366;
-  border-bottom: 1px solid #003366;
+ 
   padding-bottom:5px;
   margin-top: 60px; 
 }

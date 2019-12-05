@@ -24,9 +24,6 @@ body{
   border: none;
   }
 
-header{
-  height: 24vh;
-}
 
 .log{
   display: flex;
@@ -201,7 +198,7 @@ label{
   margin: 5vh 17vw 0 2vw;
 }
 
-button{
+.control{
   padding: 10px 20px;
   background-color: #999;
   font-size: 9px;
@@ -210,13 +207,13 @@ button{
   width: 8vw;
 }
 
-button:hover{
+.control:hover{
   background-color: rgb(5, 117, 5);
   box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
 }
 
 
-button:hover{
+.control:hover{
   
   box-shadow: -4px 13px 18px -8px rgba(0,0,0,0.75);
 }

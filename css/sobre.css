@@ -24,11 +24,6 @@ body{
   border: none;
   }
 
-header{
-  height: 24vh;
-}
-
-
 .log{
   display: flex;
   justify-content: space-around;
